@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class KidouYuuto implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public KidouYuuto(int ATK, int DEF, int VELO, int PONT) {
+    public KidouYuuto(int ATK, int DEF, int VELO) {
         this.ATK = 35;
         this.DEF = 40;
         this.VELO = 40;
-        this.PONT = 115;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class SakumaJirou implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public SakumaJirou(int ATK, int DEF, int VELO, int PONT) {
+    public SakumaJirou(int ATK, int DEF, int VELO) {
         this.ATK = 50;
         this.DEF = 15;
         this.VELO = 20;
-        this.PONT = 85;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

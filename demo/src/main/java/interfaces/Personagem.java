@@ -1,4 +1,4 @@
-package Modal;
+package interfaces;
 
 public interface Personagem {
     public int getATK();

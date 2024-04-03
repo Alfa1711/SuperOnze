@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class UtsunomiyaToramaru implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public UtsunomiyaToramaru(int ATK, int DEF, int VELO, int PONT) {
+    public UtsunomiyaToramaru(int ATK, int DEF, int VELO) {
         this.ATK = 25;
         this.DEF = 10;
         this.VELO = 25;
-        this.PONT = 60;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

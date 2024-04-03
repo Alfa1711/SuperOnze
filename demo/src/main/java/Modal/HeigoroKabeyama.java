@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class HeigoroKabeyama implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public HeigoroKabeyama(int ATK, int DEF, int VELO, int PONT) {
+    public HeigoroKabeyama(int ATK, int DEF, int VELO) {
         this.ATK = 0;
         this.DEF = 50;
         this.VELO = 1;
-        this.PONT = 51;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

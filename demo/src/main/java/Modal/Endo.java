@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class Endo implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public Endo(int ATK, int DEF, int VELO, int PONT) {
+    public Endo(int ATK, int DEF, int VELO) {
         this.ATK = 25;
         this.DEF = 40;
         this.VELO = 10;
-        this.PONT = 75;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

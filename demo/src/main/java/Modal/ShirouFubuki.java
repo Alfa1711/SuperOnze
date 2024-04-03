@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class ShirouFubuki implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public ShirouFubuki(int ATK, int DEF, int VELO, int PONT) {
+    public ShirouFubuki(int ATK, int DEF, int VELO) {
         this.ATK = 30;
         this.DEF = 50;
         this.VELO = 25;
-        this.PONT = 105;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

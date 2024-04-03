@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class ShuyaGoenji implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public ShuyaGoenji(int ATK, int DEF, int VELO, int PONT) {
+    public ShuyaGoenji(int ATK, int DEF, int VELO) {
         this.ATK = 40;
         this.DEF = 10;
         this.VELO = 30;
-        this.PONT = 80;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

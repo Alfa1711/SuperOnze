@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class TsunamiJousuki implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public TsunamiJousuki(int ATK, int DEF, int VELO, int PONT) {
+    public TsunamiJousuki(int ATK, int DEF, int VELO) {
         this.ATK = 35;
         this.DEF = 20;
         this.VELO = 35;
-        this.PONT = 90;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override

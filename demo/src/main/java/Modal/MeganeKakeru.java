@@ -1,16 +1,18 @@
 package Modal;
 
+import interfaces.Personagem;
+
 public class MeganeKakeru implements Personagem {
     private int ATK;
     private int DEF;
     private int VELO;
     private int PONT;
 
-    public MeganeKakeru(int ATK, int DEF, int VELO, int PONT) {
+    public MeganeKakeru(int ATK, int DEF, int VELO) {
         this.ATK = 5;
         this.DEF = 5;
         this.VELO = 15;
-        this.PONT = 25;
+        this.PONT = ATK+DEF+VELO;
         
     }
     @Override
