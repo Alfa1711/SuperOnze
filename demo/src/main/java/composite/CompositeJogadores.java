@@ -18,18 +18,18 @@ public class CompositeJogadores implements Personagem {
 
     @Override
     public int getATK(){
-        /* Não sei o que fazer aqui */
-        return 
+        return this.getATK();
     }
 
     @Override
     public int getDEF(){
-        /* Não sei o que fazer aqui */
+        return this.getDEF();
     }
 
     @Override
     public int getVELO(){
-        /* Não sei o que fazer aqui */
+        
+        return this.getVELO();
     }
 
     @Override

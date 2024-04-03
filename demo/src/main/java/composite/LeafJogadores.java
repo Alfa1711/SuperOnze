@@ -9,11 +9,11 @@ public class LeafJogadores implements Personagem{
     private int VELO;
     private int PONT;
 
-    public LeafJogadores(int ATK, int DEF, int VELO, int PONT) {
+    public LeafJogadores(int ATK, int DEF, int VELO) {
         this.ATK = 0;
         this.DEF = 0;
         this.VELO = 0;
-        this.PONT = 0;
+        this.PONT = ATK+DEF+VELO;
     }
 
     @Override
